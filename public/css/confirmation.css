@@ -1,0 +1,209 @@
+/* ================= CONFIRMATION PAGE ================= */
+
+.confirmation-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 60px 25px 80px;
+}
+
+
+/* ================= CONFIRMATION CARD ================= */
+
+.confirmation-card {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 45px;
+    text-align: center;
+}
+
+
+/* ================= SUCCESS ICON ================= */
+
+.success-icon {
+    width: 70px;
+    height: 70px;
+
+    margin: 0 auto 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #1f1f1f;
+    color: white;
+
+    font-size: 40px;
+    font-weight: bold;
+}
+
+
+/* ================= HEADING ================= */
+
+.confirmation-card h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.confirmation-text {
+    color: #666;
+    margin-bottom: 35px;
+}
+
+
+/* ================= BOOKING DETAILS ================= */
+
+.booking-details {
+    text-align: left;
+
+    border-top: 1px solid #ddd;
+
+    padding-top: 25px;
+}
+
+.booking-details h2 {
+    margin-bottom: 20px;
+}
+
+
+/* ================= DETAIL ROW ================= */
+
+.detail-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+
+    padding: 14px 0;
+
+    border-bottom: 1px solid #eee;
+}
+
+.detail-row span {
+    color: #666;
+}
+
+.detail-row strong {
+    text-align: right;
+}
+
+
+/* ================= TOTAL ================= */
+
+.detail-row.total {
+    margin-top: 10px;
+
+    padding-top: 20px;
+
+    border-top: 2px solid #ddd;
+    border-bottom: none;
+
+    font-size: 20px;
+}
+
+.detail-row.total strong {
+    font-size: 24px;
+}
+
+
+/* ================= HOME BUTTON ================= */
+
+.home-btn {
+    display: inline-block;
+
+    margin-top: 30px;
+
+    padding: 14px 30px;
+
+    background: #1f1f1f;
+    color: white;
+
+    text-decoration: none;
+
+    border-radius: 5px;
+
+    font-weight: bold;
+}
+
+.home-btn:hover {
+    background: #444;
+}
+
+
+/* ================= ERROR ================= */
+
+.error-message {
+    text-align: center;
+
+    background: white;
+
+    border: 1px solid #ddd;
+    border-radius: 10px;
+
+    padding: 50px 30px;
+}
+
+.error-message h2 {
+    margin-bottom: 15px;
+}
+
+.error-message a {
+    display: inline-block;
+
+    margin-top: 20px;
+
+    padding: 12px 25px;
+
+    background: #1f1f1f;
+    color: white;
+
+    text-decoration: none;
+
+    border-radius: 5px;
+}
+
+
+/* ================= LOADING ================= */
+
+.loading {
+    text-align: center;
+
+    padding: 60px 20px;
+}
+
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 600px) {
+
+    .confirmation-container {
+        padding: 35px 15px 60px;
+    }
+
+    .confirmation-card {
+        padding: 30px 20px;
+    }
+
+    .confirmation-card h1 {
+        font-size: 28px;
+    }
+
+    .detail-row {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .detail-row strong {
+        text-align: left;
+    }
+
+    .detail-row.total {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .detail-row.total strong {
+        text-align: right;
+    }
+}

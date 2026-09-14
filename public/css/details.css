@@ -1,0 +1,205 @@
+/* ================= DETAILS CONTAINER ================= */
+
+.details-container {
+    max-width: 1200px;
+    margin: 0 auto;
+
+    padding: 50px 25px 80px;
+}
+
+
+/* ================= HOTEL DETAILS ================= */
+
+.details-layout {
+    display: grid;
+
+    grid-template-columns:
+        1.3fr
+        1fr;
+
+    gap: 40px;
+
+    align-items: start;
+}
+
+
+/* ================= HOTEL IMAGE ================= */
+
+.details-image {
+    width: 100%;
+    height: 500px;
+
+    object-fit: cover;
+
+    border-radius: 10px;
+}
+
+
+/* ================= HOTEL CONTENT ================= */
+
+.details-content h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.details-location {
+    color: #666;
+    font-size: 17px;
+    margin-bottom: 18px;
+}
+
+.details-rating {
+    font-size: 16px;
+    font-weight: bold;
+
+    margin-bottom: 25px;
+}
+
+
+/* ================= DESCRIPTION ================= */
+
+.details-description {
+    color: #555;
+
+    line-height: 1.7;
+
+    margin-bottom: 25px;
+}
+
+
+/* ================= AMENITIES ================= */
+
+.details-content h2 {
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.details-amenities {
+    display: flex;
+    flex-wrap: wrap;
+
+    gap: 10px;
+
+    margin-bottom: 30px;
+}
+
+.details-amenity {
+    background: #f2f2f2;
+
+    padding: 9px 14px;
+
+    border-radius: 5px;
+
+    font-size: 14px;
+}
+
+
+/* ================= PRICE ================= */
+
+.price-box {
+    border-top: 1px solid #ddd;
+
+    padding-top: 25px;
+}
+
+.details-price {
+    font-size: 30px;
+    font-weight: bold;
+
+    margin-bottom: 5px;
+}
+
+.details-price small {
+    font-size: 14px;
+    font-weight: normal;
+}
+
+
+/* ================= BOOK BUTTON ================= */
+
+.book-btn {
+    display: block;
+
+    width: 100%;
+
+    margin-top: 20px;
+
+    padding: 15px;
+
+    background: #1f1f1f;
+    color: white;
+
+    text-align: center;
+    text-decoration: none;
+
+    border-radius: 5px;
+
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.book-btn:hover {
+    background: #444;
+}
+
+
+/* ================= LOADING ================= */
+
+.loading {
+    text-align: center;
+
+    padding: 80px 20px;
+
+    font-size: 18px;
+}
+
+
+/* ================= ERROR ================= */
+
+.error-message {
+    text-align: center;
+
+    padding: 80px 20px;
+}
+
+.error-message h2 {
+    margin-bottom: 10px;
+}
+
+
+/* ================= TABLET ================= */
+
+@media (max-width: 850px) {
+
+    .details-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .details-image {
+        height: 400px;
+    }
+
+}
+
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 600px) {
+
+    .details-container {
+        padding: 30px 5% 60px;
+    }
+
+    .details-image {
+        height: 280px;
+    }
+
+    .details-content h1 {
+        font-size: 30px;
+    }
+
+    .details-price {
+        font-size: 26px;
+    }
+
+}

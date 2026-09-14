@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Hilton Hotels Clone</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+
+    <header class="navbar">
+
+        <div class="logo">
+            HILTON
+        </div>
+
+        <nav class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="hotels.html">Hotels</a>
+            <a href="bookings.html">My Bookings</a>
+            <a href="#">Offers</a>
+            <a href="#">About</a>
+        </nav>
+
+        <button class="sign-in-btn">
+            Sign In
+        </button>
+
+    </header>
+
+
+    <!-- ================= HERO ================= -->
+
+    <section class="hero">
+
+        <div class="hero-content">
+
+            <h1>
+                Stay somewhere<br>
+                unforgettable
+            </h1>
+
+            <p>
+                Discover comfortable stays and unforgettable experiences.
+            </p>
+
+        </div>
+
+
+        <!-- ================= SEARCH BOX ================= -->
+
+        <div class="search-box">
+
+            <div class="search-field">
+
+                <label for="destination">
+                    Where are you going?
+                </label>
+
+                <input
+                    type="text"
+                    id="destination"
+                    placeholder="City or hotel"
+                >
+
+            </div>
+
+
+            <div class="search-field">
+
+                <label for="checkIn">
+                    Check-in
+                </label>
+
+                <input
+                    type="date"
+                    id="checkIn"
+                >
+
+            </div>
+
+
+            <div class="search-field">
+
+                <label for="checkOut">
+                    Check-out
+                </label>
+
+                <input
+                    type="date"
+                    id="checkOut"
+                >
+
+            </div>
+
+
+            <div class="search-field">
+
+                <label for="guests">
+                    Guests
+                </label>
+
+                <select id="guests">
+
+                    <option value="1">
+                        1 Guest
+                    </option>
+
+                    <option value="2" selected>
+                        2 Guests
+                    </option>
+
+                    <option value="3">
+                        3 Guests
+                    </option>
+
+                    <option value="4">
+                        4 Guests
+                    </option>
+
+                    <option value="5">
+                        5 Guests
+                    </option>
+
+                </select>
+
+            </div>
+
+
+            <button
+                class="search-btn"
+                onclick="searchHotels()"
+            >
+                Search
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= FEATURED HOTELS ================= -->
+
+    <section class="featured-section">
+
+        <div class="section-heading">
+
+            <h2>
+                Featured Hotels
+            </h2>
+
+            <p>
+                Explore some of our popular stays.
+            </p>
+
+        </div>
+
+
+        <div
+            id="featuredHotels"
+            class="hotel-grid"
+        >
+
+            <!-- Hotels will be loaded from API -->
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer class="footer">
+
+        <div class="footer-content">
+
+            <h2>HILTON</h2>
+
+            <p>
+                Your journey starts here.
+            </p>
+
+        </div>
+
+        <p class="copyright">
+            © 2026 Hilton Hotels Clone
+        </p>
+
+    </footer>
+
+
+    <script src="js/script.js"></script>
+
+</body>
+</html>

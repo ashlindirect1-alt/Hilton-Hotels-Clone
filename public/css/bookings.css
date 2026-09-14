@@ -1,0 +1,115 @@
+/* =========================
+   BOOKINGS PAGE
+========================= */
+
+.bookings-container {
+    max-width: 1100px;
+    margin: 50px auto;
+    padding: 0 20px;
+}
+
+.bookings-container h1 {
+    font-size: 36px;
+    margin-bottom: 8px;
+}
+
+.subtitle {
+    color: #666;
+    margin-bottom: 30px;
+}
+
+
+/* =========================
+   BOOKING CARD
+========================= */
+
+.booking-card {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    padding: 25px;
+    margin-bottom: 20px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+.booking-card h2 {
+    margin-bottom: 15px;
+    font-size: 24px;
+}
+
+.booking-info {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.booking-info p {
+    margin: 0;
+    color: #444;
+}
+
+.booking-info strong {
+    color: #222;
+}
+
+
+/* =========================
+   DELETE BUTTON
+========================= */
+
+.delete-btn {
+    background: #d32f2f;
+    color: white;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.delete-btn:hover {
+    background: #b71c1c;
+}
+
+
+/* =========================
+   MESSAGES
+========================= */
+
+.loading,
+.no-bookings,
+.error-message {
+    text-align: center;
+    padding: 30px;
+    color: #666;
+}
+
+.error-message {
+    color: #d32f2f;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 700px) {
+
+    .bookings-container {
+        margin: 30px auto;
+    }
+
+    .bookings-container h1 {
+        font-size: 28px;
+    }
+
+    .booking-info {
+        grid-template-columns: 1fr;
+    }
+
+    .booking-card {
+        padding: 18px;
+    }
+
+}

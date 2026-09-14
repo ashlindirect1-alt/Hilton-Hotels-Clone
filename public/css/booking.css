@@ -1,0 +1,306 @@
+/* ================= BOOKING PAGE ================= */
+
+.booking-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 50px 25px 80px;
+}
+
+.booking-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.booking-header h1 {
+    font-size: 38px;
+    margin-bottom: 10px;
+}
+
+.booking-header p {
+    color: #666;
+}
+
+
+/* ================= LAYOUT ================= */
+
+.booking-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 35px;
+    align-items: start;
+}
+
+
+/* ================= HOTEL SUMMARY ================= */
+
+.hotel-summary {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    background: white;
+}
+
+.booking-hotel-image {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+}
+
+.booking-hotel-content {
+    padding: 25px;
+}
+
+.booking-hotel-content h2 {
+    margin-bottom: 10px;
+}
+
+.booking-hotel-location {
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.booking-hotel-rating {
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.booking-hotel-description {
+    color: #555;
+    line-height: 1.6;
+}
+
+
+/* ================= FORM ================= */
+
+.booking-form-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 30px;
+    background: white;
+}
+
+.booking-form-card h2 {
+    margin-bottom: 25px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 13px;
+
+    border: 1px solid #ccc;
+    border-radius: 4px;
+
+    font-size: 14px;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+
+/* ================= PRICE SUMMARY ================= */
+
+.price-summary {
+    border-top: 1px solid #ddd;
+    margin-top: 25px;
+    padding-top: 20px;
+}
+
+.price-summary > div {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.price-summary span {
+    color: #555;
+}
+
+.total-row {
+    border-top: 1px solid #ddd;
+    padding-top: 15px;
+    font-size: 20px;
+}
+
+.total-row strong {
+    font-size: 24px;
+}
+
+
+/* ================= CONFIRM BUTTON ================= */
+
+.confirm-btn {
+    width: 100%;
+    padding: 15px;
+
+    border: none;
+    border-radius: 5px;
+
+    background: #1f1f1f;
+    color: white;
+
+    font-size: 16px;
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+.confirm-btn:hover {
+    background: #444;
+}
+
+
+/* ================= MESSAGE ================= */
+
+.form-message {
+    margin-top: 15px;
+    text-align: center;
+    font-weight: bold;
+}
+
+
+/* ================= LOADING ================= */
+
+.loading {
+    padding: 40px;
+    text-align: center;
+}
+
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 800px) {
+
+    .booking-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .booking-container {
+        padding: 35px 5% 60px;
+    }
+
+    .booking-header h1 {
+        font-size: 30px;
+    }
+
+    .booking-hotel-image {
+        height: 280px;
+    }
+}
+
+
+@media (max-width: 550px) {
+
+    .form-row {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    .booking-form-card {
+        padding: 20px;
+    }
+}
+
+/* =========================
+   EXTRA RESPONSIVE DESIGN
+========================= */
+
+@media (max-width: 900px) {
+
+    .booking-info {
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .bookings-container {
+        padding: 0 15px;
+        margin: 25px auto;
+    }
+
+    .bookings-container h1 {
+        font-size: 26px;
+    }
+
+    .subtitle {
+        font-size: 14px;
+    }
+
+    .booking-card {
+        padding: 16px;
+        border-radius: 10px;
+    }
+
+    .booking-card h2 {
+        font-size: 20px;
+    }
+
+    .booking-info {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .booking-info p {
+        font-size: 14px;
+        word-break: break-word;
+    }
+
+    .delete-btn {
+        width: 100%;
+        padding: 11px;
+    }
+
+}
+
+/* =========================
+   EMPTY BOOKINGS
+========================= */
+
+.no-bookings {
+    text-align: center;
+    padding: 50px 20px;
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+}
+
+.no-bookings h2 {
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+
+.no-bookings p {
+    color: #666;
+    margin-bottom: 25px;
+}
+
+.browse-hotels-btn {
+    display: inline-block;
+    background: #0066cc;
+    color: white;
+    text-decoration: none;
+    padding: 12px 24px;
+    border-radius: 6px;
+    font-weight: 600;
+}
+
+.browse-hotels-btn:hover {
+    background: #004f9e;
+}

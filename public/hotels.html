@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Hotels | Hilton Hotels Clone</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/hotels.css">
+</head>
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+
+    <header class="navbar">
+
+        <div class="logo">
+            HILTON
+        </div>
+
+        <nav class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="hotels.html">Hotels</a>
+            <a href="#">Offers</a>
+            <a href="#">About</a>
+        </nav>
+
+        <button class="sign-in-btn">
+            Sign In
+        </button>
+
+    </header>
+
+
+    <!-- ================= SEARCH SUMMARY ================= -->
+
+    <section class="results-header">
+
+        <h1>Find your stay</h1>
+
+        <p id="searchSummary">
+            Searching for hotels...
+        </p>
+
+    </section>
+
+
+    <!-- ================= MAIN CONTENT ================= -->
+
+    <main class="listing-container">
+
+        <!-- ================= FILTERS ================= -->
+
+        <aside class="filters">
+
+            <h2>Filters</h2>
+
+
+            <!-- Price -->
+
+            <div class="filter-group">
+
+                <h3>Maximum Price</h3>
+
+                <select id="priceFilter">
+
+                    <option value="all">
+                        All Prices
+                    </option>
+
+                    <option value="100">
+                        Up to $100
+                    </option>
+
+                    <option value="120">
+                        Up to $120
+                    </option>
+
+                    <option value="150">
+                        Up to $150
+                    </option>
+
+                    <option value="200">
+                        Up to $200
+                    </option>
+
+                </select>
+
+            </div>
+
+
+            <!-- Rating -->
+
+            <div class="filter-group">
+
+                <h3>Minimum Rating</h3>
+
+                <select id="ratingFilter">
+
+                    <option value="0">
+                        All Ratings
+                    </option>
+
+                    <option value="4">
+                        4+ ⭐
+                    </option>
+
+                    <option value="4.5">
+                        4.5+ ⭐
+                    </option>
+
+                    <option value="4.8">
+                        4.8+ ⭐
+                    </option>
+
+                </select>
+
+            </div>
+
+
+            <!-- Amenities -->
+
+            <div class="filter-group">
+
+                <h3>Amenities</h3>
+
+                <label>
+                    <input
+                        type="checkbox"
+                        value="Free WiFi"
+                        class="amenity-filter"
+                    >
+                    Free WiFi
+                </label>
+
+                <label>
+                    <input
+                        type="checkbox"
+                        value="Swimming Pool"
+                        class="amenity-filter"
+                    >
+                    Swimming Pool
+                </label>
+
+                <label>
+                    <input
+                        type="checkbox"
+                        value="Restaurant"
+                        class="amenity-filter"
+                    >
+                    Restaurant
+                </label>
+
+                <label>
+                    <input
+                        type="checkbox"
+                        value="Gym"
+                        class="amenity-filter"
+                    >
+                    Gym
+                </label>
+
+                <label>
+                    <input
+                        type="checkbox"
+                        value="Parking"
+                        class="amenity-filter"
+                    >
+                    Parking
+                </label>
+
+            </div>
+
+
+            <button
+                id="clearFilters"
+                class="clear-btn"
+            >
+                Clear Filters
+            </button>
+
+        </aside>
+
+
+        <!-- ================= HOTEL RESULTS ================= -->
+
+        <section class="results-section">
+
+            <div class="results-top">
+
+                <p id="resultCount">
+                    0 hotels found
+                </p>
+
+
+                <select id="sortFilter">
+
+                    <option value="recommended">
+                        Recommended
+                    </option>
+
+                    <option value="price-low">
+                        Price: Low to High
+                    </option>
+
+                    <option value="price-high">
+                        Price: High to Low
+                    </option>
+
+                    <option value="rating-high">
+                        Best Rated
+                    </option>
+
+                </select>
+
+            </div>
+
+
+            <div
+                id="hotelResults"
+                class="hotel-results"
+            >
+
+                <!-- Hotels will be loaded here -->
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <script src="js/hotels.js"></script>
+
+</body>
+</html>

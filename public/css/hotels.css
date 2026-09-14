@@ -1,0 +1,279 @@
+/* ================= RESULTS HEADER ================= */
+
+.results-header {
+    background: #f5f5f5;
+    padding: 45px 7%;
+}
+
+.results-header h1 {
+    font-size: 38px;
+    margin-bottom: 10px;
+}
+
+.results-header p {
+    color: #666;
+}
+
+
+/* ================= LISTING ================= */
+
+.listing-container {
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    gap: 35px;
+
+    padding: 45px 7%;
+}
+
+
+/* ================= FILTERS ================= */
+
+.filters {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 25px;
+    height: fit-content;
+    background: white;
+}
+
+.filters h2 {
+    margin-bottom: 25px;
+}
+
+.filter-group {
+    border-top: 1px solid #ddd;
+    padding: 20px 0;
+}
+
+.filter-group h3 {
+    font-size: 16px;
+    margin-bottom: 12px;
+}
+
+.filter-group select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.filter-group label {
+    display: block;
+    margin: 12px 0;
+    font-size: 14px;
+}
+
+.filter-group input[type="checkbox"] {
+    margin-right: 8px;
+}
+
+.clear-btn {
+    width: 100%;
+    padding: 11px;
+
+    border: 1px solid #222;
+    background: white;
+
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.clear-btn:hover {
+    background: #f2f2f2;
+}
+
+
+/* ================= RESULTS ================= */
+
+.results-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-bottom: 25px;
+}
+
+.results-top p {
+    font-weight: bold;
+}
+
+.results-top select {
+    padding: 10px 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+
+/* ================= HOTEL CARD ================= */
+
+.hotel-results {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.listing-card {
+    display: grid;
+    grid-template-columns: 280px 1fr;
+
+    border: 1px solid #ddd;
+    border-radius: 8px;
+
+    overflow: hidden;
+    background: white;
+}
+
+.listing-card img {
+    width: 100%;
+    height: 100%;
+    min-height: 250px;
+    object-fit: cover;
+}
+
+.listing-content {
+    padding: 25px;
+}
+
+.listing-content h2 {
+    margin-bottom: 8px;
+}
+
+.listing-location {
+    color: #666;
+    margin-bottom: 12px;
+}
+
+.listing-rating {
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.listing-description {
+    color: #555;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+.amenities {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 20px;
+}
+
+.amenity {
+    padding: 6px 10px;
+
+    background: #f1f1f1;
+    border-radius: 4px;
+
+    font-size: 12px;
+}
+
+.listing-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.listing-price {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.listing-price small {
+    font-size: 13px;
+    font-weight: normal;
+}
+
+.view-hotel-btn {
+    padding: 11px 18px;
+
+    background: #1f1f1f;
+    color: white;
+
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+.view-hotel-btn:hover {
+    background: #444;
+}
+
+
+/* ================= NO RESULTS ================= */
+
+.no-results {
+    text-align: center;
+    padding: 60px 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.no-results h2 {
+    margin-bottom: 10px;
+}
+
+.no-results p {
+    color: #666;
+}
+
+
+/* ================= TABLET ================= */
+
+@media (max-width: 900px) {
+
+    .listing-container {
+        grid-template-columns: 1fr;
+    }
+
+    .filters {
+        width: 100%;
+    }
+
+    .listing-card {
+        grid-template-columns: 220px 1fr;
+    }
+}
+
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 650px) {
+
+    .results-header {
+        padding: 35px 5%;
+    }
+
+    .results-header h1 {
+        font-size: 30px;
+    }
+
+    .listing-container {
+        padding: 30px 5%;
+    }
+
+    .results-top {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 15px;
+    }
+
+    .listing-card {
+        grid-template-columns: 1fr;
+    }
+
+    .listing-card img {
+        height: 220px;
+    }
+
+    .listing-bottom {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 15px;
+    }
+
+    .view-hotel-btn {
+        text-align: center;
+    }
+}
