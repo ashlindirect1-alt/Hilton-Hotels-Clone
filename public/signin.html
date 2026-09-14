@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Sign In - Hilton Hotels Clone</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/signin.css">
+</head>
+
+<body>
+
+<header class="navbar">
+
+    <div class="logo">HILTON</div>
+
+    <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="hotels.html">Hotels</a>
+        <a href="bookings.html">My Bookings</a>
+        <a href="offers.html">Offers</a>
+        <a href="about.html">About</a>
+    </nav>
+
+    <button class="sign-in-btn" onclick="window.location.href='signin.html'">
+        Sign In
+    </button>
+
+</header>
+
+
+<main class="signin-page">
+
+    <div class="signin-card">
+
+        <h1>Sign In</h1>
+
+        <p class="signin-subtitle">
+            Sign in to manage your hotel bookings.
+        </p>
+
+        <form id="signinForm">
+
+            <div class="form-group">
+                <label for="email">Email Address</label>
+
+                <input
+                    type="email"
+                    id="email"
+                    placeholder="Enter your email"
+                    required
+                >
+            </div>
+
+
+            <div class="form-group">
+                <label for="password">Password</label>
+
+                <input
+                    type="password"
+                    id="password"
+                    placeholder="Enter your password"
+                    required
+                >
+            </div>
+
+
+            <button type="submit" class="signin-submit">
+                Sign In
+            </button>
+
+        </form>
+
+        <p id="signinMessage" class="signin-message"></p>
+
+
+    </div>
+
+</main>
+
+
+<footer class="footer">
+
+    <div class="footer-content">
+        <h2>HILTON</h2>
+        <p>Your journey starts here.</p>
+    </div>
+
+    <p class="copyright">
+        © 2026 Hilton Hotels Clone
+    </p>
+
+</footer>
+
+
+<script src="js/signin.js"></script>
+
+</body>
+</html>
